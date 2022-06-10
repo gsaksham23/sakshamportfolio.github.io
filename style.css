@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    margin: 0em;
+    background: ;
+    position: relative;
+    font-weight: 400;
+    background-color: bisque;
+}
+
+ul li{
+    list-style-type: none;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+nav a{
+    text-decoration-line: none;
+    color: white;
+    
+}
+
+.list{
+    display: flex;
+    flex-flow: row ;
+    flex-basis: 8em;
+    text-align: left;
+    word-spacing: 0.05rem;
+    gap: 50px
+}
+
+
+nav {
+    flex-flow:column wrap-reverse ;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    height: 3em;
+  }
+
+.nav{
+    background-color: rgb(61, 5, 93); 
+}
+
+nav a:hover{
+    cursor: pointer;
+    color:rgba(255, 136, 0, 0.741);
+    border-bottom: 2px;
+}
+
+#intro{
+    background-color: rgba(253, 216, 116, 0.86);
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row-reverse;
+}
+
+.photo{
+    flex-basis: 0%;
+    max-width: 100%;
+    height: auto;
+}
+
+.intro2{
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: row;
+}
+
+.about{
+    display: flex;
+    flex: basis 15%;
+    flex-direction: column;
+    
+}
+
+.hi{
+    padding-top: 5%;
+    font-size: 2.5rem;
+    color: rgb(153, 126, 53);
+}
+
+.name{
+    margin-bottom: 0%;
+    flex-basis: 10%;
+    font-size: 2rem;
+}
+
+#gallery{
+    display: block;
+}
+
+.ghead{
+    font-size: 1.52rem;
+    color: rgba(216, 184, 37, 0.933);
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.ed{
+    font-size: 1.52rem;
+    color: rgba(216, 184, 37, 0.933);
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    display: block;
+    text-align: center;
+}
+.about{
+    font-size: 1.52rem;
+    color: rgba(216, 184, 37, 0.933);
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    display: block;
+    text-align: center;
+}
+
+#contact{
+    background-color: rgb(61, 5, 93);
+}
+
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+  }
+  #contact h2 {
+    text-align: left;
+    color: white;
+  }
+  #contact img {
+    max-width: 50vw;
+    margin: auto;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .form__component {
+    color: rgba(255, 136, 0, 0.741);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+@media screen and (max-width: 750px) {
+
+    #inrto{
+        margin-left: 20px;
+    }
+    .photo{
+        flex-basis: 0%;
+        max-width: 60%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .intro2{
+        display: flex;
+        flex-basis: 60%;
+        flex-direction: row;
+    }
+    
+    .about{
+        display: flex;
+        flex: basis 20%;
+        flex-direction: column;
+        
+    }
+    
+    .hi{
+        padding-top: 20%;
+        font-size: 1.5rem;
+    }
+    
+    .name{
+        margin-bottom: 0%;
+        flex-basis: 20%;
+        font-size: 1.5rem;
+    }
+
+    .post{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (555px) {
+    .list{
+        flex-basis: 5em;
+    }
+}
+@media screen and (max-width: 620px) {
+    .photo{
+        flex-basis: 0%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .intro2{
+        display: flex;
+        flex-basis: 60%;
+        flex-direction: row;
+    }
+    
+    .about{
+        display: flex;
+        flex: basis 20%;
+        flex-direction: column;
+        
+    }
+    
+    .hi{
+        padding-top: 35%;
+        font-size: 1.2rem;
+    }
+    
+    .name{
+        margin-bottom: 0%;
+        flex-basis: 20%;
+        font-size: 1rem;
+    }
+
+    .post{
+        font-size: 0.8rem;
+    }
+}
+
+  @media screen and (max-width: 950px) {
+    #contact{
+      grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: 750px) {   
+    #contact {
+      grid-template-columns: 1fr;
+    }
+    
+  
